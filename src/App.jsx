@@ -8,8 +8,6 @@ function App() {
 const [catFact, setcatFact] = useState("");
 const [catGif, setcatGif] = useState("");
 
-//const apiGiphy = "9k2Yd7y4mHXGlIvHMc9F5MeoBFefBzOa";
-
 const giphyAPI = (string) => {
   /* Fetching the data from the giphy API. */
   fetch(`https://api.giphy.com/v1/gifs/search?q=${string}&api_key=${API_KEY}`)
